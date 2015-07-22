@@ -1,0 +1,1 @@
+SkyFontsStubApp = angular.module('SkyFontsStubApp', ['ngResource', 'ngRoute']);

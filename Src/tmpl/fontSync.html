@@ -1,0 +1,31 @@
+<table class="table table-condensed">
+    <thead>
+        <tr>
+        <!--     <th>FontContentId</th>
+         
+           <th>FontDetailUrl</th> -->   <th>Font Variation Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="font in fontSync">
+
+           <!-- <td>{{font.FontContentId}}</td> -->
+            <td>{{font.VariationName}}</style></td>
+         <td> 
+            <div>
+                 <a ng-click="downloadFont(font.FontContentId)" class="btn btn-info pull-right" href="javascript:">Download Font</a>
+                 <a ng-click="NodeServer()" class="btn btn-info pull-right" href="javascript:">Add To Cart</a>
+            </div>
+          </td>
+
+        </tr>
+        <tr data-ng-show="fontSync.length >= 0">
+            <td colspan="3" style="text-align:center;" ng-model="MyText">{{MyText}}ccc</td>
+        </tr>
+
+        <tr data-ng-show="fontSync.length <= 0">
+            <td colspan="3" style="text-align:center;">Please Download some fonts</td>
+        </tr>
+
+    </tbody>
+</table>
